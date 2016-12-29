@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C3563CB1E0A62FD00328771 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3563CA1E0A62FD00328771 /* ViewController.m */; };
+		4C3563CE1E0A65AF00328771 /* ZnzxTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3563CD1E0A65AF00328771 /* ZnzxTabBarController.m */; };
+		4C3563D11E0A65D200328771 /* ZnzxTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3563D01E0A65D200328771 /* ZnzxTabBar.m */; };
+		4C3563D41E0A6F4C00328771 /* ZnzxBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3563D31E0A6F4C00328771 /* ZnzxBaseViewController.m */; };
+		4C82CA561DFF899A00D9FAF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C82CA551DFF899A00D9FAF9 /* main.m */; };
+		4C82CA5F1DFF899A00D9FAF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C82CA5D1DFF899A00D9FAF9 /* Main.storyboard */; };
+		4C82CA611DFF899A00D9FAF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C82CA601DFF899A00D9FAF9 /* Assets.xcassets */; };
+		4C82CA641DFF899A00D9FAF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C82CA621DFF899A00D9FAF9 /* LaunchScreen.storyboard */; };
+		4C82CA891DFFC3AE00D9FAF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C82CA831DFFC3AE00D9FAF9 /* AppDelegate.m */; };
+		4CB62ED81E0CBAB7006AD1CE /* ZNZXMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB62ED71E0CBAB7006AD1CE /* ZNZXMainTopView.m */; };
+		4CBA87551E0B79CA00423F41 /* ZNZXLauchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA87531E0B79CA00423F41 /* ZNZXLauchViewController.m */; };
+		4CBA87561E0B79CA00423F41 /* ZNZXLauchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA87541E0B79CA00423F41 /* ZNZXLauchViewController.xib */; };
+		4CBA875A1E0BAF2300423F41 /* ZNZXFocuseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA87581E0BAF2300423F41 /* ZNZXFocuseViewController.m */; };
+		4CBA875B1E0BAF2300423F41 /* ZNZXFocuseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA87591E0BAF2300423F41 /* ZNZXFocuseViewController.xib */; };
+		4CBA875F1E0BAF3C00423F41 /* ZNZXHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA875D1E0BAF3C00423F41 /* ZNZXHotViewController.m */; };
+		4CBA87601E0BAF3C00423F41 /* ZNZXHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA875E1E0BAF3C00423F41 /* ZNZXHotViewController.xib */; };
+		4CBA87641E0BAF6400423F41 /* ZNZXNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA87621E0BAF6400423F41 /* ZNZXNearViewController.m */; };
+		4CBA87651E0BAF6400423F41 /* ZNZXNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA87631E0BAF6400423F41 /* ZNZXNearViewController.xib */; };
+		4CF5BC901E0A754A001ABBBD /* ZNZXMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5BC8E1E0A754A001ABBBD /* ZNZXMeViewController.m */; };
+		4CF5BC911E0A754A001ABBBD /* ZNZXMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF5BC8F1E0A754A001ABBBD /* ZNZXMeViewController.xib */; };
+		4CF5BC941E0A761D001ABBBD /* ZNZXBaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5BC931E0A761D001ABBBD /* ZNZXBaseNavViewController.m */; };
+		4CF5BC981E0A7899001ABBBD /* ZNZXMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5BC961E0A7899001ABBBD /* ZNZXMainViewController.m */; };
+		4CF5BC991E0A7899001ABBBD /* ZNZXMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF5BC971E0A7899001ABBBD /* ZNZXMainViewController.xib */; };
+		4D5DC326084FC9BAE4A7EAA6 /* libPods-FiveInARow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 175C06ED7548018679A75168 /* libPods-FiveInARow.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		175C06ED7548018679A75168 /* libPods-FiveInARow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FiveInARow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3563C81E0A62B500328771 /* ZNZXMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZNZXMacros.h; sourceTree = "<group>"; };
+		4C3563C91E0A62FD00328771 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4C3563CA1E0A62FD00328771 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4C3563CC1E0A65AF00328771 /* ZnzxTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZnzxTabBarController.h; sourceTree = "<group>"; };
+		4C3563CD1E0A65AF00328771 /* ZnzxTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZnzxTabBarController.m; sourceTree = "<group>"; };
+		4C3563CF1E0A65D200328771 /* ZnzxTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZnzxTabBar.h; sourceTree = "<group>"; };
+		4C3563D01E0A65D200328771 /* ZnzxTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZnzxTabBar.m; sourceTree = "<group>"; };
+		4C3563D21E0A6F4C00328771 /* ZnzxBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZnzxBaseViewController.h; sourceTree = "<group>"; };
+		4C3563D31E0A6F4C00328771 /* ZnzxBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZnzxBaseViewController.m; sourceTree = "<group>"; };
+		4C82CA511DFF899A00D9FAF9 /* FiveInARow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiveInARow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C82CA551DFF899A00D9FAF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C82CA5E1DFF899A00D9FAF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C82CA601DFF899A00D9FAF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C82CA631DFF899A00D9FAF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C82CA651DFF899A00D9FAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C82CA821DFFC3AE00D9FAF9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C82CA831DFFC3AE00D9FAF9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4CB62ED61E0CBAB7006AD1CE /* ZNZXMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNZXMainTopView.h; sourceTree = "<group>"; };
+		4CB62ED71E0CBAB7006AD1CE /* ZNZXMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNZXMainTopView.m; sourceTree = "<group>"; };
+		4CBA87521E0B79CA00423F41 /* ZNZXLauchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNZXLauchViewController.h; sourceTree = "<group>"; };
+		4CBA87531E0B79CA00423F41 /* ZNZXLauchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNZXLauchViewController.m; sourceTree = "<group>"; };
+		4CBA87541E0B79CA00423F41 /* ZNZXLauchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZNZXLauchViewController.xib; sourceTree = "<group>"; };
+		4CBA87571E0BAF2300423F41 /* ZNZXFocuseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNZXFocuseViewController.h; sourceTree = "<group>"; };
+		4CBA87581E0BAF2300423F41 /* ZNZXFocuseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNZXFocuseViewController.m; sourceTree = "<group>"; };
+		4CBA87591E0BAF2300423F41 /* ZNZXFocuseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZNZXFocuseViewController.xib; sourceTree = "<group>"; };
+		4CBA875C1E0BAF3C00423F41 /* ZNZXHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNZXHotViewController.h; sourceTree = "<group>"; };
+		4CBA875D1E0BAF3C00423F41 /* ZNZXHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNZXHotViewController.m; sourceTree = "<group>"; };
+		4CBA875E1E0BAF3C00423F41 /* ZNZXHotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZNZXHotViewController.xib; sourceTree = "<group>"; };
+		4CBA87611E0BAF6400423F41 /* ZNZXNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNZXNearViewController.h; sourceTree = "<group>"; };
+		4CBA87621E0BAF6400423F41 /* ZNZXNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNZXNearViewController.m; sourceTree = "<group>"; };
+		4CBA87631E0BAF6400423F41 /* ZNZXNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZNZXNearViewController.xib; sourceTree = "<group>"; };
+		4CE521681E0A54E300B717F8 /* FiveInARow.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiveInARow.pch; sourceTree = "<group>"; };
+		4CF5BC8D1E0A754A001ABBBD /* ZNZXMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNZXMeViewController.h; sourceTree = "<group>"; };
+		4CF5BC8E1E0A754A001ABBBD /* ZNZXMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNZXMeViewController.m; sourceTree = "<group>"; };
+		4CF5BC8F1E0A754A001ABBBD /* ZNZXMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZNZXMeViewController.xib; sourceTree = "<group>"; };
+		4CF5BC921E0A761D001ABBBD /* ZNZXBaseNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNZXBaseNavViewController.h; sourceTree = "<group>"; };
+		4CF5BC931E0A761D001ABBBD /* ZNZXBaseNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNZXBaseNavViewController.m; sourceTree = "<group>"; };
+		4CF5BC951E0A7899001ABBBD /* ZNZXMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNZXMainViewController.h; sourceTree = "<group>"; };
+		4CF5BC961E0A7899001ABBBD /* ZNZXMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNZXMainViewController.m; sourceTree = "<group>"; };
+		4CF5BC971E0A7899001ABBBD /* ZNZXMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZNZXMainViewController.xib; sourceTree = "<group>"; };
+		4F19FFE5B235CFA3CA673084 /* Pods-FiveInARow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveInARow.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiveInARow/Pods-FiveInARow.release.xcconfig"; sourceTree = "<group>"; };
+		A273DD3E4C5906E2477DCDF5 /* Pods-FiveInARow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveInARow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FiveInARow/Pods-FiveInARow.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C82CA4E1DFF899A00D9FAF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5DC326084FC9BAE4A7EAA6 /* libPods-FiveInARow.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DA4011ED4A2CDF8B002AFAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				175C06ED7548018679A75168 /* libPods-FiveInARow.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3018124A9B14DC800FC515AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A273DD3E4C5906E2477DCDF5 /* Pods-FiveInARow.debug.xcconfig */,
+				4F19FFE5B235CFA3CA673084 /* Pods-FiveInARow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C82CA481DFF899A00D9FAF9 = {
+			isa = PBXGroup;
+			children = (
+				4C82CA531DFF899A00D9FAF9 /* FiveInARow */,
+				4C82CA521DFF899A00D9FAF9 /* Products */,
+				3018124A9B14DC800FC515AD /* Pods */,
+				0DA4011ED4A2CDF8B002AFAF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C82CA521DFF899A00D9FAF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C82CA511DFF899A00D9FAF9 /* FiveInARow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C82CA531DFF899A00D9FAF9 /* FiveInARow */ = {
+			isa = PBXGroup;
+			children = (
+				4C82CA6B1DFFC3AE00D9FAF9 /* Class */,
+				4C82CA541DFF899A00D9FAF9 /* Supporting Files */,
+			);
+			path = FiveInARow;
+			sourceTree = "<group>";
+		};
+		4C82CA541DFF899A00D9FAF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C82CA5D1DFF899A00D9FAF9 /* Main.storyboard */,
+				4C82CA601DFF899A00D9FAF9 /* Assets.xcassets */,
+				4C82CA621DFF899A00D9FAF9 /* LaunchScreen.storyboard */,
+				4C82CA651DFF899A00D9FAF9 /* Info.plist */,
+				4C82CA551DFF899A00D9FAF9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C82CA6B1DFFC3AE00D9FAF9 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				4C82CA6C1DFFC3AE00D9FAF9 /* Base */,
+				4C82CA6D1DFFC3AE00D9FAF9 /* Helper */,
+				4C82CA701DFFC3AE00D9FAF9 /* Launch */,
+				4C82CA751DFFC3AE00D9FAF9 /* Lib */,
+				4C82CA761DFFC3AE00D9FAF9 /* Live */,
+				4C82CA7B1DFFC3AE00D9FAF9 /* Me */,
+				4C82CA801DFFC3AE00D9FAF9 /* NetWork */,
+				4C82CA811DFFC3AE00D9FAF9 /* Other */,
+				4C82CA841DFFC3AE00D9FAF9 /* Show */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		4C82CA6C1DFFC3AE00D9FAF9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4C3563CC1E0A65AF00328771 /* ZnzxTabBarController.h */,
+				4C3563CD1E0A65AF00328771 /* ZnzxTabBarController.m */,
+				4C3563CF1E0A65D200328771 /* ZnzxTabBar.h */,
+				4C3563D01E0A65D200328771 /* ZnzxTabBar.m */,
+				4C3563D21E0A6F4C00328771 /* ZnzxBaseViewController.h */,
+				4C3563D31E0A6F4C00328771 /* ZnzxBaseViewController.m */,
+				4CF5BC921E0A761D001ABBBD /* ZNZXBaseNavViewController.h */,
+				4CF5BC931E0A761D001ABBBD /* ZNZXBaseNavViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4C82CA6D1DFFC3AE00D9FAF9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4C82CA6E1DFFC3AE00D9FAF9 /* Category */,
+				4C82CA6F1DFFC3AE00D9FAF9 /* Tools */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4C82CA6E1DFFC3AE00D9FAF9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4C82CA6F1DFFC3AE00D9FAF9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		4C82CA701DFFC3AE00D9FAF9 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				4C82CA711DFFC3AE00D9FAF9 /* Handler */,
+				4C82CA721DFFC3AE00D9FAF9 /* Model */,
+				4C82CA731DFFC3AE00D9FAF9 /* View */,
+				4C82CA741DFFC3AE00D9FAF9 /* ViewController */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		4C82CA711DFFC3AE00D9FAF9 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		4C82CA721DFFC3AE00D9FAF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C82CA731DFFC3AE00D9FAF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C82CA741DFFC3AE00D9FAF9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4C82CA751DFFC3AE00D9FAF9 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		4C82CA761DFFC3AE00D9FAF9 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				4C82CA771DFFC3AE00D9FAF9 /* Handler */,
+				4C82CA781DFFC3AE00D9FAF9 /* Model */,
+				4C82CA791DFFC3AE00D9FAF9 /* View */,
+				4C82CA7A1DFFC3AE00D9FAF9 /* ViewController */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		4C82CA771DFFC3AE00D9FAF9 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		4C82CA781DFFC3AE00D9FAF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C82CA791DFFC3AE00D9FAF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C82CA7A1DFFC3AE00D9FAF9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA87521E0B79CA00423F41 /* ZNZXLauchViewController.h */,
+				4CBA87531E0B79CA00423F41 /* ZNZXLauchViewController.m */,
+				4CBA87541E0B79CA00423F41 /* ZNZXLauchViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4C82CA7B1DFFC3AE00D9FAF9 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				4C82CA7C1DFFC3AE00D9FAF9 /* Handler */,
+				4C82CA7D1DFFC3AE00D9FAF9 /* Model */,
+				4C82CA7E1DFFC3AE00D9FAF9 /* View */,
+				4C82CA7F1DFFC3AE00D9FAF9 /* ViewController */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		4C82CA7C1DFFC3AE00D9FAF9 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		4C82CA7D1DFFC3AE00D9FAF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C82CA7E1DFFC3AE00D9FAF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C82CA7F1DFFC3AE00D9FAF9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4C82CA801DFFC3AE00D9FAF9 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		4C82CA811DFFC3AE00D9FAF9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4C82CA821DFFC3AE00D9FAF9 /* AppDelegate.h */,
+				4C82CA831DFFC3AE00D9FAF9 /* AppDelegate.m */,
+				4C3563C91E0A62FD00328771 /* ViewController.h */,
+				4C3563CA1E0A62FD00328771 /* ViewController.m */,
+				4CE521681E0A54E300B717F8 /* FiveInARow.pch */,
+				4C3563C81E0A62B500328771 /* ZNZXMacros.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4C82CA841DFFC3AE00D9FAF9 /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				4C82CA851DFFC3AE00D9FAF9 /* Handler */,
+				4C82CA861DFFC3AE00D9FAF9 /* Model */,
+				4C82CA871DFFC3AE00D9FAF9 /* View */,
+				4C82CA881DFFC3AE00D9FAF9 /* ViewController */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		4C82CA851DFFC3AE00D9FAF9 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		4C82CA861DFFC3AE00D9FAF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C82CA871DFFC3AE00D9FAF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CB62ED61E0CBAB7006AD1CE /* ZNZXMainTopView.h */,
+				4CB62ED71E0CBAB7006AD1CE /* ZNZXMainTopView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C82CA881DFFC3AE00D9FAF9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4CF5BC8D1E0A754A001ABBBD /* ZNZXMeViewController.h */,
+				4CF5BC8E1E0A754A001ABBBD /* ZNZXMeViewController.m */,
+				4CF5BC8F1E0A754A001ABBBD /* ZNZXMeViewController.xib */,
+				4CF5BC951E0A7899001ABBBD /* ZNZXMainViewController.h */,
+				4CF5BC961E0A7899001ABBBD /* ZNZXMainViewController.m */,
+				4CF5BC971E0A7899001ABBBD /* ZNZXMainViewController.xib */,
+				4CBA87571E0BAF2300423F41 /* ZNZXFocuseViewController.h */,
+				4CBA87581E0BAF2300423F41 /* ZNZXFocuseViewController.m */,
+				4CBA87591E0BAF2300423F41 /* ZNZXFocuseViewController.xib */,
+				4CBA875C1E0BAF3C00423F41 /* ZNZXHotViewController.h */,
+				4CBA875D1E0BAF3C00423F41 /* ZNZXHotViewController.m */,
+				4CBA875E1E0BAF3C00423F41 /* ZNZXHotViewController.xib */,
+				4CBA87611E0BAF6400423F41 /* ZNZXNearViewController.h */,
+				4CBA87621E0BAF6400423F41 /* ZNZXNearViewController.m */,
+				4CBA87631E0BAF6400423F41 /* ZNZXNearViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C82CA501DFF899A00D9FAF9 /* FiveInARow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C82CA681DFF899A00D9FAF9 /* Build configuration list for PBXNativeTarget "FiveInARow" */;
+			buildPhases = (
+				E458DBB1C3D721FFA0EE141F /* 📦 Check Pods Manifest.lock */,
+				4C82CA4D1DFF899A00D9FAF9 /* Sources */,
+				4C82CA4E1DFF899A00D9FAF9 /* Frameworks */,
+				4C82CA4F1DFF899A00D9FAF9 /* Resources */,
+				CBB3378EE870A4C4B02EFCE3 /* 📦 Embed Pods Frameworks */,
+				7DB12F4656BC7A1B045BEF5F /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FiveInARow;
+			productName = FiveInARow;
+			productReference = 4C82CA511DFF899A00D9FAF9 /* FiveInARow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C82CA491DFF899A00D9FAF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZNZX;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "znzx@QH";
+				TargetAttributes = {
+					4C82CA501DFF899A00D9FAF9 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 4C82CA4C1DFF899A00D9FAF9 /* Build configuration list for PBXProject "FiveInARow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C82CA481DFF899A00D9FAF9;
+			productRefGroup = 4C82CA521DFF899A00D9FAF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C82CA501DFF899A00D9FAF9 /* FiveInARow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C82CA4F1DFF899A00D9FAF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBA87651E0BAF6400423F41 /* ZNZXNearViewController.xib in Resources */,
+				4CBA87561E0B79CA00423F41 /* ZNZXLauchViewController.xib in Resources */,
+				4CBA875B1E0BAF2300423F41 /* ZNZXFocuseViewController.xib in Resources */,
+				4C82CA641DFF899A00D9FAF9 /* LaunchScreen.storyboard in Resources */,
+				4CF5BC911E0A754A001ABBBD /* ZNZXMeViewController.xib in Resources */,
+				4CF5BC991E0A7899001ABBBD /* ZNZXMainViewController.xib in Resources */,
+				4C82CA611DFF899A00D9FAF9 /* Assets.xcassets in Resources */,
+				4CBA87601E0BAF3C00423F41 /* ZNZXHotViewController.xib in Resources */,
+				4C82CA5F1DFF899A00D9FAF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7DB12F4656BC7A1B045BEF5F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiveInARow/Pods-FiveInARow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBB3378EE870A4C4B02EFCE3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiveInARow/Pods-FiveInARow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E458DBB1C3D721FFA0EE141F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C82CA4D1DFF899A00D9FAF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBA87641E0BAF6400423F41 /* ZNZXNearViewController.m in Sources */,
+				4C3563CB1E0A62FD00328771 /* ViewController.m in Sources */,
+				4CBA875A1E0BAF2300423F41 /* ZNZXFocuseViewController.m in Sources */,
+				4C82CA891DFFC3AE00D9FAF9 /* AppDelegate.m in Sources */,
+				4CBA87551E0B79CA00423F41 /* ZNZXLauchViewController.m in Sources */,
+				4C3563D11E0A65D200328771 /* ZnzxTabBar.m in Sources */,
+				4CF5BC981E0A7899001ABBBD /* ZNZXMainViewController.m in Sources */,
+				4CBA875F1E0BAF3C00423F41 /* ZNZXHotViewController.m in Sources */,
+				4CF5BC901E0A754A001ABBBD /* ZNZXMeViewController.m in Sources */,
+				4C3563D41E0A6F4C00328771 /* ZnzxBaseViewController.m in Sources */,
+				4C82CA561DFF899A00D9FAF9 /* main.m in Sources */,
+				4CB62ED81E0CBAB7006AD1CE /* ZNZXMainTopView.m in Sources */,
+				4CF5BC941E0A761D001ABBBD /* ZNZXBaseNavViewController.m in Sources */,
+				4C3563CE1E0A65AF00328771 /* ZnzxTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C82CA5D1DFF899A00D9FAF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C82CA5E1DFF899A00D9FAF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C82CA621DFF899A00D9FAF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C82CA631DFF899A00D9FAF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C82CA661DFF899A00D9FAF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4C82CA671DFF899A00D9FAF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C82CA691DFF899A00D9FAF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A273DD3E4C5906E2477DCDF5 /* Pods-FiveInARow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FiveInARow/Class/Other/FiveInARow.pch";
+				INFOPLIST_FILE = FiveInARow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZhejiangZhongnong.FiveInARow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4C82CA6A1DFF899A00D9FAF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F19FFE5B235CFA3CA673084 /* Pods-FiveInARow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FiveInARow/Class/Other/FiveInARow.pch";
+				INFOPLIST_FILE = FiveInARow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZhejiangZhongnong.FiveInARow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C82CA4C1DFF899A00D9FAF9 /* Build configuration list for PBXProject "FiveInARow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C82CA661DFF899A00D9FAF9 /* Debug */,
+				4C82CA671DFF899A00D9FAF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C82CA681DFF899A00D9FAF9 /* Build configuration list for PBXNativeTarget "FiveInARow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C82CA691DFF899A00D9FAF9 /* Debug */,
+				4C82CA6A1DFF899A00D9FAF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C82CA491DFF899A00D9FAF9 /* Project object */;
+}

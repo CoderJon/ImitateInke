@@ -1,0 +1,18 @@
+//
+//  FiveInARow.pch
+//  FiveInARow
+//
+//  Created by qiaohui on 16/12/21.
+//  Copyright © 2016年 znzx@QH. All rights reserved.
+//
+
+#ifndef FiveInARow_pch
+#define FiveInARow_pch
+
+#import "Masonry.h"
+#import "ZNZXMacros.h"
+#import "YYKit.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* FiveInARow_pch */
